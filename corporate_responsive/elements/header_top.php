@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-custom.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-custom-nav.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap.min.css">
 	<?php echo $html->css($view->getStylesheet('main.less'))?>
 	<?php Loader::element('header_required', array('pageTitle' => isset($pageTitle) ? $pageTitle : ''));?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="<?php echo $view->getThemePath()?>/js/jquery.min.js"></script>
 	<script src="<?php echo $view->getThemePath()?>/js/bootstrap.min.js"></script> 
 	<script src="<?php echo $view->getThemePath()?>/js/hovernav.js"></script>
+    <script src="<?php echo $view->getThemePath()?>/js/bootstrap.bundle.min.js"></script>
     <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             var msViewportStyle = document.createElement('style')
