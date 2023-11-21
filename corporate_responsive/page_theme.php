@@ -37,12 +37,12 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
 
     public function getThemeName()
     {
-        return t('Corporate');
+        return t('Corporate B4-B5');
     }
 
     public function getThemeDescription()
     {
-        return t('Responsive Healthscope Corporate theme for Concrete5.');
+        return t('Responsive Healthscope B3 - B5 test theme.');
     }
 
     public function getThemeBlockClasses()
