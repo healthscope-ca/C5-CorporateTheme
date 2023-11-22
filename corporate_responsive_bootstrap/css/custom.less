@@ -1,0 +1,101 @@
+/*
+	Carousel Images slider: fix sometimes unclickable at smaller viewport sizes
+*/
+.carousel-control 
+{
+	z-index: 999; 
+}
+
+header {
+
+	.navbar-default {
+		background: @navbar-default-background;
+	}	
+
+	/*
+	Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
+	The Bootstrap CSS is unchanged.
+	*/
+	@media (min-width: 768px) {
+	  /* Use this if you wish to hide the caret
+	  .navbar-nav .caret {
+		display: none;
+	  } 
+	  */
+	   .dropdown-menu ul li{
+		  list-style:none!important;
+	  }
+	  
+	  .navbar-nav .open ul {
+		display: none;
+	  }
+	  .navbar-default .navbar-nav > .open > a,
+	  .navbar-default .navbar-nav > .open > a:hover,
+	  .navbar-default .navbar-nav > .open > a:focus {
+		color: @navbar-default-color;
+		background: none
+	  }
+	  .navbar-default .navbar-nav > li:hover {
+		background: @navbar-default-hover-background;
+	  }
+	  .navbar-inverse .navbar-nav > .open > a,
+	  .navbar-inverse .navbar-nav > .open > a:hover,
+	  .navbar-inverse .navbar-nav > .open > a:focus {
+		color: @navbar-inverse-color;
+		background: none
+	  }
+	  .navbar-inverse .navbar-nav > li:hover {
+		background: @navbar-inverse-background
+	  }
+	  .navbar-nav .hovernav:hover > .dropdown-menu {
+		display: block;
+	  }
+	}
+		
+	/*__________________________________SITE SEARCH_____________________________________________*/
+	#siteSearch {
+		position: relative;
+		float: right;
+		width: 180px;
+		margin: 30px 30px 10px 0;
+		z-index: 0!important;
+	}
+	#siteSearch input {
+		height: 20px;
+		width: 150px;
+		border: none;
+		padding: 3px 0 0 7px;
+		font-size: 8pt;
+		background: url(../images/siteSearchOnWhite.png) 0 0 no-repeat;
+		color: @site-search-color;
+		margin: 0;
+	}
+	#SearchContainer input#siteSearch {
+		float: left;
+		height: 18px;
+		width: 144px;
+		border: none;
+		padding: 3px 0 0 7px;
+		font-size: 8pt;
+		background: url(../images/siteSearchOnWhite.png) 0 0 no-repeat;
+		color: @site-search-color;
+		margin: 0;
+	}
+	#siteSearch #siteSearchBtn {
+		position: absolute;
+		top: 0px;
+		left: 150px;
+		height: 28px;
+		width: 28px;
+		border: none;
+		margin: 0;
+		font-size: 8pt;
+		background: url(../images/transparent.gif) right 0px no-repeat;
+		color: @site-search-color;
+	}
+	@media (max-width: 768px) {
+		#siteSearch {
+			margin: 0 0 10px 0;
+		}
+	}
+}

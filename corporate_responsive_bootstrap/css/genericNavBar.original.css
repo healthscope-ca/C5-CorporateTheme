@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* CSS Document */
+/**********************************************************************************************
+  CSS for:  Healthscope All sites/Generic Navigation 
+  Author: Fernando Pizzani
+  Date: October 2011
+
+***********************************************************************************************/
+/* MENU */
+
+div#genericNavBar {
+	position:absolute;
+	top:0;
+	float: right;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:.8em;
+	z-index:9999!important;
+
+}
+div#genericNavBar  ul, div#genericNavBar  ul li ul{
+z-index:9999!important;
+
+}
+div#genericNavBar li a, div#genericNavBar li {
+	float: left;
+	padding:0 0px 0 0;
+	z-index:999!important;
+}
+div#genericNavBar li {
+	list-style: none;
+	position: relative;
+}
+div#genericNavBar li a {
+	padding-top:4px;
+	text-decoration: none;
+	height:16px;
+	color:#595757;
+	width:150px;
+	background:#eeeeee;
+	border-left:1px solid #333;
+	text-align:center;
+}
+
+div#genericNavBar li.hoverBg a {
+	background:#fff;
+}
+div#genericNavBar > ul >  li.hoverBg > ul > li a {
+	margin: 0 0 10px 0;
+	padding: 4px 5px 4px 20px; 
+	background:#fff url(images/arrow_off.png) no-repeat 5px 5px; 
+	font-weight: normal; 
+		z-index:999!important;
+	}
+div#genericNavBar li a:hover {
+	background:#fff;
+}
+div#genericNavBar > li a:link > ul > li a:hover{
+	
+}
+div#genericNavBar li a#firstChild{
+	border-left:1px solid #fff!important;
+	}
+/* Submenu */
+
+div#genericNavBar li ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	padding:10px;
+	margin: 0;
+	background: #FFF;
+	z-index:999;
+}
+div#genericNavBar li:hover > ul {
+width:172px;
+	display: block;
+	background:url(images/popUp.png) bottom left no-repeat!important;
+z-index:999!important;
+}
+div#genericNavBar li ul li {
+ 	z-index:999!important;
+}
+div#genericNavBar li ul li, div#genericNavBar li ul li a {
+	float: none;
+	border-left:none;
+	text-align:left!important;	z-index:999!important;
+	
+	}
+	 div#genericNavBar li ul li a {
+	padding:  0 0 0 20px!important;
+}
+div#genericNavBar li ul li {
+	_display: inline; /* for IE6 */
+}
+div#genericNavBar li ul li a {
+	width: 150px;
+	display: block;
+}
+div#genericNavBar > ul > li > ul > li a {
+	margin: 0 0 10px 0;
+	padding: 4px 5px 4px 20px; 
+	background:#fff url(images/arrow_off.png) no-repeat 5px 5px; 
+	font-weight: normal;  
+}
+div#genericNavBar > ul > li > ul > li a:hover {
+	background: #efefef url(images/arrow_on.png) no-repeat 5px 5px;
+	color:#a32403!important;
+}
+
+/* To keep the menu link at the top of the hover menu selected. Works with jquery*/
+li.hoverBg{
+
+
+height:20px;
+
+}	
+
+/*_________________________________________________SELECTED TAB___________________________________________*/
+body#pathology #genericNavBar ul li a.pathology, body#corporate #genericNavBar ul li a.corporate,body#hospitals #genericNavBar ul li a.hospitals, body#medicalCentres #genericNavBar ul li a.medicalCentres, body#veterinaryPathology #genericNavBar ul li a.veterinaryPathology, body#international #genericNavBar ul li a.international, body#independenceServices #genericNavBar ul li a.independenceServices{
+
+	cursor:default;
+	background:#fff;
+		z-index:999!important;
+}
+
+

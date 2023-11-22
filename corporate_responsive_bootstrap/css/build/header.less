@@ -1,0 +1,46 @@
+header {
+
+  background-color: @header-background-color;
+
+  #header-site-title {
+    font-family: @header-site-title-type-font-family;
+    font-weight: @header-site-title-type-font-weight;
+    color: @header-site-title-type-color;
+    text-transform: @header-site-title-type-text-transform;
+    line-height: @header-site-title-type-font-size / 2;
+    font-size: @header-site-title-type-font-size;
+    .transition(color 0.2s linear);
+
+    &:hover {
+      color: darken(@header-site-title-type-color, 20%);
+      text-decoration: none !important;
+    }
+  }
+
+  .ccm-search-block-form {
+    position: relative;
+    &:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      position: absolute;
+      left: 14px;
+      top: 9px;
+      text-decoration: inherit;
+      color: @header-search-input-icon-color;
+    }
+    .ccm-search-block-text {
+      border: 1px solid @header-search-input-border-color;
+      color: @header-search-input-icon-color;
+      border-radius: 30px;
+      padding: 10px 20px 10px 35px;
+      background-color: @header-search-input-background-color;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

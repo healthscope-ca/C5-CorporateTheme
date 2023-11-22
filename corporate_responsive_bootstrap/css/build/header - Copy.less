@@ -1,0 +1,376 @@
+header {
+	/*_____________NAV BAR_____________*/
+
+	.navbar-default {
+		background: @navbar-default-background;
+	}	
+	
+	/*
+	Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
+	The Bootstrap CSS is unchanged.
+	*/
+	@media (min-width: 768px) {
+	  /* Use this if you wish to hide the caret
+	  .navbar-nav .caret {
+		display: none;
+	  } 
+	  */
+	   .dropdown-menu ul li{
+		  list-style:none!important;
+	  }
+	  
+	  .navbar-nav .open ul {
+		display: none;
+	  }
+	  .navbar-default .navbar-nav > .open > a,
+	  .navbar-default .navbar-nav > .open > a:hover,
+	  .navbar-default .navbar-nav > .open > a:focus {
+		color: @navbar-default-color;
+		background: none
+	  }
+	  .navbar-default .navbar-nav > li:hover {
+		background: @navbar-default-hover-background;
+	  }
+	  .navbar-inverse .navbar-nav > .open > a,
+	  .navbar-inverse .navbar-nav > .open > a:hover,
+	  .navbar-inverse .navbar-nav > .open > a:focus {
+		color: @navbar-inverse-color;
+		background: none
+	  }
+	  .navbar-inverse .navbar-nav > li:hover {
+		background: @navbar-inverse-background
+	  }
+	  .navbar-nav .hovernav:hover > .dropdown-menu {
+		display: block;
+	  }
+	}
+	
+	/*GENERIC NAVBAR*/
+	/* Clearfix */
+	/* Clearfix */
+	.clearfix:before,
+	.clearfix:after {
+		content: " ";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		*zoom: 1;
+	}
+
+	/* Basic Styles */
+	.generic-navbar{
+		background: @generic-navbar-background;
+		border-bottom:1px solid @generic-type-color;
+	}
+
+	nav.generic {
+		height: 30px;
+		width: 100%;
+		background: ;
+		font-size: 1em;
+		position: relative;
+		border-bottom: 1px solid #cc;
+	}
+	nav.generic ul {
+		padding: 0;
+		margin: 0 auto;
+		width: 100%;
+		height: 30px;
+	}
+	nav.generic li {
+		display: inline;
+		float: left;
+	}
+	nav.generic a {
+		color: @generic-border-color;
+		display: inline-block;
+		width: auto;
+		text-align: center;
+		text-decoration: none;
+		line-height: 30px;
+		/*padding: 0 43px 0 43px;*/
+		padding: 0 65px 0 65px;
+
+	}
+	nav.generic li a {
+		border-right: 1px solid @generic-border-color;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+	}
+	nav.generic li:last-child a {
+		border-right: 0;
+	}
+	nav.generic a:hover, nav.generic a:active {
+		background-color: @generic-type-color;
+	}
+	nav.generic a#pull {
+		display: none;
+	}
+	
+	/*Styles for screen 515px and lower*/
+	@media only screen and (max-width : 767px) {
+		nav.generic {
+			border-bottom: 0;
+		}
+		nav.generic ul {
+			display: none;
+			height: auto;
+			background:@generic-navbar-background;
+		border-bottom:1px solid @generic-type-color;
+		-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.47);
+		-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.47);
+		box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.47);
+		
+		}
+		nav.generic a#pull {
+			display: block;
+			background-color: @generic-type-color;
+			width: 100%;
+			position: relative;
+		}
+		nav.generic a#pull:after {
+			content:"";
+			background: url('../../images/nav-generic-icon.png') no-repeat;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			position: absolute;
+			right: 25px;
+			top: 5px;
+		}
+		.generic-navbar{
+		background:@generic-type-color;
+		border-bottom:1px solid @generic-type-color;
+		
+		
+	}
+	}
+
+	/*Smartphone*/
+	@media only screen and (max-width : 320px) {
+		nav.generic li {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+		nav.generic li a {
+			border-bottom: 1px solid @generic-li-color;
+		}
+	}
+
+	.logo {
+		margin-top: 10px!important;
+		margin-bottom: 10px;
+	}
+	
+	@media (min-width : 992px) and  (max-width : 1200px){
+		nav.generic a {
+			padding: 0 50px;
+		}
+	}
+	
+	@media (min-width : 992px) and  (max-width : 1199px) {
+		nav.generic a {
+			padding: 0 40px;
+		}
+	}
+	
+	@media (min-width : 768px) and  (max-width : 991px) {
+		nav.generic a {
+			padding: 0 25px;
+		}
+	}
+		
+	@media (max-width: 768px) {
+		.logo {
+			margin-bottom: 0;
+		}
+	}
+	
+
+	/*__________________________________SITE SEARCH_____________________________________________*/
+	#siteSearch {
+		position: relative;
+		float: right;
+		width: 180px;
+		margin: 30px 30px 10px 0;
+		z-index: 0!important;
+	}
+	#siteSearch input {
+		height: 20px;
+		width: 150px;
+		border: none;
+		padding: 3px 0 0 7px;
+		font-size: 8pt;
+		background: url(../../images/siteSearchOnWhite.png) 0 0 no-repeat;
+		color: @site-search-color;
+		margin: 0;
+	}
+	#SearchContainer input#siteSearch {
+		float: left;
+		height: 18px;
+		width: 144px;
+		border: none;
+		padding: 3px 0 0 7px;
+		font-size: 8pt;
+		background: url(../../images/siteSearchOnWhite.png) 0 0 no-repeat;
+		color: @site-search-color;
+		margin: 0;
+	}
+	#siteSearch #siteSearchBtn {
+		position: absolute;
+		top: 0px;
+		left: 150px;
+		height: 28px;
+		width: 28px;
+		border: none;
+		margin: 0;
+		font-size: 8pt;
+		background: url(../../images/transparent.gif) right 0px no-repeat;
+		color: @site-search-color;
+	}
+	@media (max-width: 768px) {
+		#siteSearch {
+			margin: 0 0 10px 0;
+		}
+	}
+	
+	
+	/* auto nav */
+	/*
+	.header-navigation nav {
+
+		.dropdown{
+		  &:after {
+			content: ' ▶';
+		  }
+		  &:hover {
+			&:after {
+			  content:'\25bc';
+			}
+		  }
+		}
+
+		ul {
+		  a {
+			padding-right: 40px;
+			font-family: @header-navigation-type-font-family;
+			font-size: @header-navigation-type-font-size;
+			font-weight: @header-navigation-type-font-weight;
+			color: @header-navigation-type-color;
+			text-transform: @header-navigation-type-text-transform;
+
+			&:hover {
+			  color: @header-navigation-hover-color;
+			  text-decoration: none;
+			}
+		  }
+		  -webkit-font-smoothing:antialiased;
+		  list-style: outside none none;
+		  float: left;
+		  margin: 0;
+		  
+
+		   li {
+			&:hover {
+			  ul {
+				opacity: 1;
+				top: 30px;
+				visibility: visible;
+			  }
+			}
+			margin: 0;
+			padding: 0;
+			padding-bottom: 10px;
+			position: relative;
+			display: inline-block;
+			ul {
+			  li {
+				&:hover {
+				  a {
+					color: @header-navigation-menu-text-hover-color;
+				  }
+				}
+				a {
+				  &:hover {
+					color: @header-navigation-menu-text-hover-color;
+				  }
+				  display: block;
+				  padding-bottom: 15px;
+				  font-size: 1.0em;
+				  text-transform: none;
+				  color: @header-navigation-menu-text-color;
+				  .transition(all .25s ease);
+				  font-family: 'Open Sans', sans-serif;
+				  font-weight: normal;
+				}
+				float: none;
+				width: 100%;
+				padding-bottom: 0px;
+			  }
+			  cursor: pointer;
+			  padding: 15px;
+			  padding-bottom: 0px;
+			  float: left;
+			  left: 0;
+			  opacity: 0;
+			  position: absolute;
+			  top: 20px;
+			  visibility: hidden;
+			  width: 200px;
+			  background-color: @header-navigation-menu-background-color;
+			  z-index: 99;
+			  .transition(all .25s ease);
+			  .border-radius(3px);
+			  border: 1px solid @header-navigation-menu-border-color;
+			}
+		  }
+		}
+	}
+	*/
+	/*----------navBar collapse--------------*/
+@media (max-width: 500px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+       float: none!important;
+   margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+}
+
+
+  
+  
