@@ -33,7 +33,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
 			$a = new GlobalArea('Social Links');
 			$a->display();
 			?>
-			<p style="font-size:13px";> &copy; <?php echo date("Y"); ?> Healthscope | All rights reserved  | <a href="https://healthscope.com.au/privacy-summary">Privacy Policy</a></p>
+			<p style="font-size:13px";> &copy; <?php echo date("Y"); ?> Healthscope | All rights reserved  | <a href="https://healthscope.com.au/privacy-summary" target="_blank">Privacy Policy</a>  | <a href="https://healthscope.com.au/download_file/2307/0"  target="_blank">Child Safety Statement</a></p>
 		</div>
 	</div>
 </footer>
