@@ -1,0 +1,113 @@
+
+.card-wrapper {
+	margin: 10px 0px 10px 0px;
+	height: 100%;
+/*	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;*/
+}
+
+.card-wrapper.odd-card {
+    background-color: #00a7b8;
+}
+
+.card-wrapper.even-card {
+    background-color: #f8f8f8;
+}
+
+.card-wrapper .card-image .image {
+	padding-top: 65%; 
+}
+
+.card-wrapper .card-image {
+	background-size: cover;
+    background-position: center;
+}
+
+
+.card-wrapper .card-content {
+	padding: 20px 25px 25px 25px;
+}
+
+.card-wrapper .card-date {
+	margin-top: 0px;
+	font-size: 12.5px;
+}
+
+.card-wrapper .card-heading {
+    font-size: 21px;
+    line-height: 25px;
+	font-weight: 900;
+}
+
+.card-wrapper a.button-url { 
+	text-decoration: underline;
+}
+
+.card-wrapper.even-card .card-heading,
+.card-wrapper.even-card .button-url {
+	color: #00a7b8;
+}
+.card-wrapper.even-card .card-content {
+	color: black;
+}
+
+.card-wrapper.odd-card .card-heading,
+.card-wrapper.odd-card .button-url {
+	color: white;
+}
+
+.card-wrapper.odd-card .card-content {
+	color: white;
+}
+
+.card-wrapper .card-body {
+    font-size: 13.5px;
+    line-height: 1.25em;
+	font-weight: 100;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.card-wrapper .card-heading {
+/*		color: red;*/
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.card-wrapper .card-heading {
+/*		color: blue;*/
+	}
+	.card-wrapper .card-image .image {
+		padding-top: 90%; 
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.card-wrapper .card-heading {
+/*		color: green;*/
+	}
+	.card-wrapper .card-image .image {
+		padding-top: 65%; 
+	}
+	.card-wrapper .card-body {
+		min-height: 145px;
+		max-height: 145px;
+		overflow: hidden;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+

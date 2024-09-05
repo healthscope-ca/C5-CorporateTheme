@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btHsCardLayout">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="cardImage" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="articleDate" type="I"></field>
+        <field name="cardTitle" type="C" size="255"></field>
+        <field name="cardBody" type="X2"></field>
+        <field name="buttonUrl" type="C"></field>
+        <field name="buttonText" type="C" size="255"></field>
+    </table>
+</schema>

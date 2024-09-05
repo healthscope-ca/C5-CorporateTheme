@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btHospitalsContactDetails">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="hospitalName" type="X2">
+			<default value="" />
+		</field>
+		<field name="address" type="X2">
+			<default value="" />
+		</field>
+		<field name="phoneNumber" type="X2">
+			<default value="" />
+		</field>
+	</table>
+</schema>

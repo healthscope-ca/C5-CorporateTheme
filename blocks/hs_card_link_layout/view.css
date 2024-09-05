@@ -1,0 +1,113 @@
+
+/*.card-link-wrapper {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}*/
+
+ .card-link-wrapper.odd-card {
+/*    background-color: #00a7b8; */
+	background-color: #f8f8f8;
+}
+
+.card-link-wrapper.even-card {
+	background-color: #f8f8f8; 
+
+}
+
+.card-link-wrapper .card-image .image {
+	padding-top: 100%; 
+}
+
+.card-link-wrapper .card-image {
+	background-size: cover;
+    background-position: center;
+}
+
+.card-link-wrapper {
+	margin: 10px 0px 10px 0px;
+	height: 100%;
+}
+
+.card-link-wrapper .card-content {
+	padding: 10px 25px 10px 25px;
+}
+
+.card-link-wrapper .card-heading {
+    font-size: 20px;
+    line-height: 25px;
+	font-weight: 900;
+}
+
+.card-link-wrapper a:hover {
+	background-color: #00a7b8;
+	color: #f8f8f8;
+}
+
+.card-link-wrapper a.button-url { 
+	text-decoration: none;
+}
+.card-link-wrapper a.button-url:hover { 
+	background-color: #00a7b8;
+	color: #f8f8f8;
+}
+.card-link-wrapper a.button-url:visited { 
+	text-decoration: none;
+}
+
+.card-link-wrapper.even-card .card-heading,
+.card-link-wrapper .even-card .button-url {
+	color: #00a7b8;
+}
+.card-link-wrapper.even-card .card-content {
+	color: black;
+}
+
+.card-link-wrapper.odd-card .card-heading,
+.card-link-wrapper.odd-card .button-url {
+	color: #00a7b8;
+}
+
+/*.card-link-wrapper.odd-card .card-content {
+	color: white;
+}*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.card-link-wrapper .card-heading {
+/*		color: red;*/
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.card-link-wrapper .card-heading {
+/*		color: blue;*/
+	}
+	.card-link-wrapper .card-image .image {
+		padding-top: 90%; 
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.card-link-wrapper .card-heading {
+		color: green;
+	}
+	.card-link-wrapper .card-image .image {
+		padding-top: 100%; 
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+

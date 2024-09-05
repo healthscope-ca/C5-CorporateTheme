@@ -1,0 +1,137 @@
+/*
+	.no-gutter > [class*='col-'] {
+		padding-right:0;
+		padding-left:0;
+	}
+*/	
+.card-wrapper-wide {
+	margin: 10px 0px 10px 0px;
+	height: 100%;
+/*	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;*/
+}
+
+.card-wrapper-wide.odd-card {
+    background-color: #00a7b8;
+}
+
+.card-wrapper-wide.even-card {
+    background-color: #f8f8f8;
+}
+
+.card-wrapper-wide .card-image .image {
+	padding-top: 100%; 
+}
+
+.card-wrapper-wide .card-image {
+	background-size: cover;
+    background-position: center;
+}
+
+.card-wrapper-wide .card-date {
+	margin-top: 0px;
+	font-size: 12.5px;
+}
+
+.card-wrapper-wide .card-heading {
+    font-size: 21px;
+    line-height: 25px;
+	font-weight: 900;
+}
+
+.card-wrapper-wide a.button-url { 
+	text-decoration: underline;
+}
+
+.card-wrapper-wide.even-card .card-heading,
+.card-wrapper-wide.even-card .button-url {
+	color: #00a7b8;
+}
+.card-wrapper-wide.even-card .card-content {
+	color: black;
+}
+
+.card-wrapper-wide.odd-card .card-heading,
+.card-wrapper-wide.odd-card .button-url {
+	color: white;
+}
+
+.card-wrapper-wide.odd-card .card-content {
+	color: white;
+}
+
+.card-wrapper-wide .card-content {
+	padding: 15px;
+}
+
+.card-wrapper-wide .card-body {
+ /*   font-size: 13.5px;
+    line-height: 1.25em;
+	font-weight: 100;*/
+
+	color: #333333;
+}	
+	
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.card-wrapper-wide .card-heading {
+/*		color: red;*/
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.card-wrapper-wide .card-heading {
+		/*padding-top: 20px;*/
+	}
+	.card-wrapper-wide .card-image .image {
+		padding-top: 90%; 
+	}
+	
+	.card-wrapper-wide.odd-card .image-column,
+	.card-wrapper-wide.even-card .content-column { 
+		padding-left: 0px;
+	}
+
+	.card-wrapper-wide.even-card .image-column,
+	.card-wrapper-wide.odd-card .content-column {
+		padding-right: 0px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.card-wrapper-wide .card-heading {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 31.92px;
+	}
+	.card-wrapper-wide .card-image .image {
+		padding-top: 100%; 
+	}
+	.card-wrapper-wide .card-body {
+/*		min-height: 145px;
+		max-height: 145px;
+		overflow: hidden;*/
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 31.5px;		
+	}
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+

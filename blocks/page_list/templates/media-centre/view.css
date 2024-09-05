@@ -1,0 +1,178 @@
+
+.media-centre-wrapper {
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+}
+
+.media-centre-wrapper.odd-card {
+    background-color: #00a7b8;
+}
+
+.media-centre-wrapper.even-card {
+    background-color: #f8f8f8;
+}
+
+.media-centre-wrapper .card-image .image {
+	padding-top: 65%; 
+}
+
+.media-centre-wrapper .card-image {
+	background-size: cover;
+    background-position: center;
+}
+
+.media-centre-wrapper .card-date {
+	margin-top: 0px;
+	font-size: 12.5px;
+}
+
+.media-centre-wrapper .card-heading {
+    font-size: 16px;
+    line-height: 22px;
+	font-weight: bold;
+}
+
+.media-centre-wrapper a.button-url { 
+	text-decoration: underline;
+}
+
+.media-centre-wrapper.even-card .card-heading,
+.media-centre-wrapper.even-card .button-url {
+	color: #00a7b8;
+}
+.media-centre-wrapper.even-card .card-content {
+	color: black;
+}
+
+.media-centre-wrapper.odd-card .card-heading,
+.media-centre-wrapper.odd-card .button-url {
+	color: white;
+}
+
+.media-centre-wrapper.odd-card .card-content {
+	color: white;
+}
+
+.media-centre-wrapper .card-body {
+    font-size: 13.5px;
+    line-height: 1.25em;
+	font-weight: 100;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+	.media-centre-wrapper .card-content {
+		padding: 0px 15px 15px 15px;
+	}	
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.media-centre-wrapper .card-heading {
+/*		color: red;*/
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+	.media-centre-wrapper .card-content {
+		padding: 10px 15px 15px 0px;
+	}
+
+	.media-centre-wrapper .card-heading {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: bold;
+	}
+
+	.media-centre-wrapper .card-image .image {
+		padding-top: 90%; 
+	}
+	
+	.media-centre-wrapper .card-body {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 100;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+}
+
+/* Small Devices, Tablets (but not medium devices and above) */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.media-centre-wrapper .card-text {
+		min-height: 250px;
+		max-height: 250px;
+		overflow: hidden;
+		margin-bottom: 12px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.media-centre-wrapper .card-content {
+		padding: 5px 15px 15px 0px;
+	}
+	.media-centre-wrapper .card-heading {
+/*		color: green;*/
+	}
+	.media-centre-wrapper .card-image .image {
+		padding-top: 65%; 
+	}
+	.media-centre-wrapper .card-body {
+		font-size: 13.5px;
+		line-height: 1.25em;
+		font-weight: 100;
+		margin-bottom: 10px;
+	}
+	.media-centre-wrapper .card-heading {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: bold;
+	}
+}
+
+/* Medium Devices, Desktops (but not Large Devices) */
+@media only screen and (min-width : 992px) and (max-width : 1199) {
+	.media-centre-wrapper .card-body {
+		min-height:101px;
+		max-height:101px;
+		overflow:hidden;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+	.media-centre-wrapper .card-heading {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: bold;
+	}
+
+	.media-centre-wrapper .card-image .image {
+		padding-top: 80%; 
+	}
+	
+	.media-centre-wrapper .card-body {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 100;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	
+}
+
+
